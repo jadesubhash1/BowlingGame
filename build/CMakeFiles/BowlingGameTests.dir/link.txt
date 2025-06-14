@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/BowlingGameTests.dir/Tests/BowlingGameTests.cpp.o CMakeFiles/BowlingGameTests.dir/BowlingGame/BowlingGame.cpp.o CMakeFiles/BowlingGameTests.dir/BowlingGame/Frame.cpp.o CMakeFiles/BowlingGameTests.dir/BowlingGame/Player.cpp.o  -o BowlingGameTests  lib/libgtest.a lib/libgtest_main.a -lpthread lib/libgtest.a -lpthread 
