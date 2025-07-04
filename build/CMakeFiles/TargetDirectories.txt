@@ -4,6 +4,7 @@
 /workspaces/BowlingGame/build/CMakeFiles/list_install_components.dir
 /workspaces/BowlingGame/build/CMakeFiles/rebuild_cache.dir
 /workspaces/BowlingGame/build/CMakeFiles/edit_cache.dir
+/workspaces/BowlingGame/build/CMakeFiles/BowlingGameApp.dir
 /workspaces/BowlingGame/build/CMakeFiles/BowlingGameTests.dir
 /workspaces/BowlingGame/build/googletest/CMakeFiles/install/strip.dir
 /workspaces/BowlingGame/build/googletest/CMakeFiles/install/local.dir

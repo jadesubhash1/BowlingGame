@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /workspaces/BowlingGame/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/BowlingGameApp.dir/all
 all: CMakeFiles/BowlingGameTests.dir/all
 all: googletest/all
 
@@ -64,6 +65,7 @@ preinstall: googletest/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/BowlingGameApp.dir/clean
 clean: CMakeFiles/BowlingGameTests.dir/clean
 clean: googletest/clean
 
@@ -130,6 +132,33 @@ googletest/googletest/clean: googletest/googletest/CMakeFiles/gtest.dir/clean
 .PHONY : googletest/googletest/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/BowlingGameApp.dir
+
+# All Build rule for target.
+CMakeFiles/BowlingGameApp.dir/all:
+	$(MAKE) -f CMakeFiles/BowlingGameApp.dir/build.make CMakeFiles/BowlingGameApp.dir/depend
+	$(MAKE) -f CMakeFiles/BowlingGameApp.dir/build.make CMakeFiles/BowlingGameApp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/BowlingGame/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target BowlingGameApp"
+.PHONY : CMakeFiles/BowlingGameApp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/BowlingGameApp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/BowlingGame/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/BowlingGameApp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/BowlingGame/build/CMakeFiles 0
+.PHONY : CMakeFiles/BowlingGameApp.dir/rule
+
+# Convenience name for target.
+BowlingGameApp: CMakeFiles/BowlingGameApp.dir/rule
+
+.PHONY : BowlingGameApp
+
+# clean rule for target.
+CMakeFiles/BowlingGameApp.dir/clean:
+	$(MAKE) -f CMakeFiles/BowlingGameApp.dir/build.make CMakeFiles/BowlingGameApp.dir/clean
+.PHONY : CMakeFiles/BowlingGameApp.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/BowlingGameTests.dir
 
 # All Build rule for target.
@@ -137,7 +166,7 @@ CMakeFiles/BowlingGameTests.dir/all: googletest/googletest/CMakeFiles/gtest_main
 CMakeFiles/BowlingGameTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f CMakeFiles/BowlingGameTests.dir/build.make CMakeFiles/BowlingGameTests.dir/depend
 	$(MAKE) -f CMakeFiles/BowlingGameTests.dir/build.make CMakeFiles/BowlingGameTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/BowlingGame/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target BowlingGameTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/BowlingGame/build/CMakeFiles --progress-num=6,7,8,9,10 "Built target BowlingGameTests"
 .PHONY : CMakeFiles/BowlingGameTests.dir/all
 
 # Build rule for subdir invocation for target.
@@ -161,11 +190,11 @@ CMakeFiles/BowlingGameTests.dir/clean:
 # Target rules for target googletest/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
-googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googlemock/CMakeFiles/gmock.dir/all
+googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/BowlingGame/build/CMakeFiles --progress-num=8,9 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/BowlingGame/build/CMakeFiles --progress-num=13,14 "Built target gmock_main"
 .PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -192,7 +221,7 @@ googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
 googletest/googlemock/CMakeFiles/gmock.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/BowlingGame/build/CMakeFiles --progress-num=6,7 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/BowlingGame/build/CMakeFiles --progress-num=11,12 "Built target gmock"
 .PHONY : googletest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -219,7 +248,7 @@ googletest/googlemock/CMakeFiles/gmock.dir/clean:
 googletest/googletest/CMakeFiles/gtest_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/BowlingGame/build/CMakeFiles --progress-num=12,13 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/BowlingGame/build/CMakeFiles --progress-num=17,18 "Built target gtest_main"
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -246,7 +275,7 @@ googletest/googletest/CMakeFiles/gtest_main.dir/clean:
 googletest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/BowlingGame/build/CMakeFiles --progress-num=10,11 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/BowlingGame/build/CMakeFiles --progress-num=15,16 "Built target gtest"
 .PHONY : googletest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.

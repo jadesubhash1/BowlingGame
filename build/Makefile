@@ -157,6 +157,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named BowlingGameApp
+
+# Build rule for target.
+BowlingGameApp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BowlingGameApp
+.PHONY : BowlingGameApp
+
+# fast build rule for target.
+BowlingGameApp/fast:
+	$(MAKE) -f CMakeFiles/BowlingGameApp.dir/build.make CMakeFiles/BowlingGameApp.dir/build
+.PHONY : BowlingGameApp/fast
+
+#=============================================================================
 # Target rules for targets named BowlingGameTests
 
 # Build rule for target.
@@ -227,6 +240,7 @@ BowlingGame/BowlingGame.o: BowlingGame/BowlingGame.cpp.o
 
 # target to build an object file
 BowlingGame/BowlingGame.cpp.o:
+	$(MAKE) -f CMakeFiles/BowlingGameApp.dir/build.make CMakeFiles/BowlingGameApp.dir/BowlingGame/BowlingGame.cpp.o
 	$(MAKE) -f CMakeFiles/BowlingGameTests.dir/build.make CMakeFiles/BowlingGameTests.dir/BowlingGame/BowlingGame.cpp.o
 .PHONY : BowlingGame/BowlingGame.cpp.o
 
@@ -236,6 +250,7 @@ BowlingGame/BowlingGame.i: BowlingGame/BowlingGame.cpp.i
 
 # target to preprocess a source file
 BowlingGame/BowlingGame.cpp.i:
+	$(MAKE) -f CMakeFiles/BowlingGameApp.dir/build.make CMakeFiles/BowlingGameApp.dir/BowlingGame/BowlingGame.cpp.i
 	$(MAKE) -f CMakeFiles/BowlingGameTests.dir/build.make CMakeFiles/BowlingGameTests.dir/BowlingGame/BowlingGame.cpp.i
 .PHONY : BowlingGame/BowlingGame.cpp.i
 
@@ -245,6 +260,7 @@ BowlingGame/BowlingGame.s: BowlingGame/BowlingGame.cpp.s
 
 # target to generate assembly for a file
 BowlingGame/BowlingGame.cpp.s:
+	$(MAKE) -f CMakeFiles/BowlingGameApp.dir/build.make CMakeFiles/BowlingGameApp.dir/BowlingGame/BowlingGame.cpp.s
 	$(MAKE) -f CMakeFiles/BowlingGameTests.dir/build.make CMakeFiles/BowlingGameTests.dir/BowlingGame/BowlingGame.cpp.s
 .PHONY : BowlingGame/BowlingGame.cpp.s
 
@@ -254,6 +270,7 @@ BowlingGame/Frame.o: BowlingGame/Frame.cpp.o
 
 # target to build an object file
 BowlingGame/Frame.cpp.o:
+	$(MAKE) -f CMakeFiles/BowlingGameApp.dir/build.make CMakeFiles/BowlingGameApp.dir/BowlingGame/Frame.cpp.o
 	$(MAKE) -f CMakeFiles/BowlingGameTests.dir/build.make CMakeFiles/BowlingGameTests.dir/BowlingGame/Frame.cpp.o
 .PHONY : BowlingGame/Frame.cpp.o
 
@@ -263,6 +280,7 @@ BowlingGame/Frame.i: BowlingGame/Frame.cpp.i
 
 # target to preprocess a source file
 BowlingGame/Frame.cpp.i:
+	$(MAKE) -f CMakeFiles/BowlingGameApp.dir/build.make CMakeFiles/BowlingGameApp.dir/BowlingGame/Frame.cpp.i
 	$(MAKE) -f CMakeFiles/BowlingGameTests.dir/build.make CMakeFiles/BowlingGameTests.dir/BowlingGame/Frame.cpp.i
 .PHONY : BowlingGame/Frame.cpp.i
 
@@ -272,6 +290,7 @@ BowlingGame/Frame.s: BowlingGame/Frame.cpp.s
 
 # target to generate assembly for a file
 BowlingGame/Frame.cpp.s:
+	$(MAKE) -f CMakeFiles/BowlingGameApp.dir/build.make CMakeFiles/BowlingGameApp.dir/BowlingGame/Frame.cpp.s
 	$(MAKE) -f CMakeFiles/BowlingGameTests.dir/build.make CMakeFiles/BowlingGameTests.dir/BowlingGame/Frame.cpp.s
 .PHONY : BowlingGame/Frame.cpp.s
 
@@ -281,6 +300,7 @@ BowlingGame/Player.o: BowlingGame/Player.cpp.o
 
 # target to build an object file
 BowlingGame/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/BowlingGameApp.dir/build.make CMakeFiles/BowlingGameApp.dir/BowlingGame/Player.cpp.o
 	$(MAKE) -f CMakeFiles/BowlingGameTests.dir/build.make CMakeFiles/BowlingGameTests.dir/BowlingGame/Player.cpp.o
 .PHONY : BowlingGame/Player.cpp.o
 
@@ -290,6 +310,7 @@ BowlingGame/Player.i: BowlingGame/Player.cpp.i
 
 # target to preprocess a source file
 BowlingGame/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/BowlingGameApp.dir/build.make CMakeFiles/BowlingGameApp.dir/BowlingGame/Player.cpp.i
 	$(MAKE) -f CMakeFiles/BowlingGameTests.dir/build.make CMakeFiles/BowlingGameTests.dir/BowlingGame/Player.cpp.i
 .PHONY : BowlingGame/Player.cpp.i
 
@@ -299,8 +320,36 @@ BowlingGame/Player.s: BowlingGame/Player.cpp.s
 
 # target to generate assembly for a file
 BowlingGame/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/BowlingGameApp.dir/build.make CMakeFiles/BowlingGameApp.dir/BowlingGame/Player.cpp.s
 	$(MAKE) -f CMakeFiles/BowlingGameTests.dir/build.make CMakeFiles/BowlingGameTests.dir/BowlingGame/Player.cpp.s
 .PHONY : BowlingGame/Player.cpp.s
+
+BowlingGame/main.o: BowlingGame/main.cpp.o
+
+.PHONY : BowlingGame/main.o
+
+# target to build an object file
+BowlingGame/main.cpp.o:
+	$(MAKE) -f CMakeFiles/BowlingGameApp.dir/build.make CMakeFiles/BowlingGameApp.dir/BowlingGame/main.cpp.o
+.PHONY : BowlingGame/main.cpp.o
+
+BowlingGame/main.i: BowlingGame/main.cpp.i
+
+.PHONY : BowlingGame/main.i
+
+# target to preprocess a source file
+BowlingGame/main.cpp.i:
+	$(MAKE) -f CMakeFiles/BowlingGameApp.dir/build.make CMakeFiles/BowlingGameApp.dir/BowlingGame/main.cpp.i
+.PHONY : BowlingGame/main.cpp.i
+
+BowlingGame/main.s: BowlingGame/main.cpp.s
+
+.PHONY : BowlingGame/main.s
+
+# target to generate assembly for a file
+BowlingGame/main.cpp.s:
+	$(MAKE) -f CMakeFiles/BowlingGameApp.dir/build.make CMakeFiles/BowlingGameApp.dir/BowlingGame/main.cpp.s
+.PHONY : BowlingGame/main.cpp.s
 
 Tests/BowlingGameTests.o: Tests/BowlingGameTests.cpp.o
 
@@ -341,6 +390,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... BowlingGameApp"
 	@echo "... BowlingGameTests"
 	@echo "... gmock_main"
 	@echo "... gmock"
@@ -355,6 +405,9 @@ help:
 	@echo "... BowlingGame/Player.o"
 	@echo "... BowlingGame/Player.i"
 	@echo "... BowlingGame/Player.s"
+	@echo "... BowlingGame/main.o"
+	@echo "... BowlingGame/main.i"
+	@echo "... BowlingGame/main.s"
 	@echo "... Tests/BowlingGameTests.o"
 	@echo "... Tests/BowlingGameTests.i"
 	@echo "... Tests/BowlingGameTests.s"
